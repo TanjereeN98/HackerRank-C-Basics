@@ -2,4 +2,4 @@
 
 The Challenges/Problems are functions to write within the main code.
 
-Naming will be "$week-number_$function_name"
+Naming will be "$week-$function_name"
