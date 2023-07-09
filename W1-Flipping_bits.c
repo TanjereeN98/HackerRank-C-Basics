@@ -24,7 +24,7 @@ long parse_long(char*);
  */
 
 long flippingBits(long n) {
-int j, y, i = 31;
+int j, i = 31;
 char binary_bits[33];
 
 binary_bits[32] = '\0';
@@ -36,8 +36,7 @@ while (n > 0)
     n /= 2;
     i--;
 }
-//printf("%s", binary_bits);
-//printf("%s", binary_bits[0]);
+
 for (j = 0 ; j < 32 ; j++)
 {
     if (binary_bits[j] == '0')
@@ -46,9 +45,8 @@ for (j = 0 ; j < 32 ; j++)
         binary_bits[j] = '0';
     
 }
-//printf("%s", binary_bits);
+
 long x = strtol(binary_bits, NULL, 2);
-//printf("%lu\n", x);
 return (x);
 }
 
